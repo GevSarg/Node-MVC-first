@@ -6,8 +6,6 @@ class LoginServices {
     if (user) {
       const isValidPassword = bcryptjs.compareSync(password, user.password);
       if (isValidPassword) {
-        // console.log(user);
-
         return { success: true, user };
       }
     }

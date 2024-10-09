@@ -14,16 +14,14 @@ router.get("/", userController.getUsers);
 
 router.post("/", userController.createUsers);
 
+router.delete("/:id", userController.deleteUsers);
+
 router.get("/change/:id", changeController.getName);
 
 router.post("/change/:id", changeController.changeName);
 
-router.get("/login", (req, res, next) => {
-  res.render("login");
-});
+router.get("/login", loginController.renderLogin);
 
 router.post("/login", loginController.checkLogin);
-
-router.delete("/:id", userController.deleteUsers);
 
 module.exports = router;

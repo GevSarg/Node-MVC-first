@@ -18,10 +18,7 @@ class UserController {
       const user = await schema.validateAsync(req.body);
       await req.app.locals.services.users.createUsers(user);
 
-      //   saveUser(res.locals.users, user);
-
       res.redirect("/users/login");
-      //  res.render('users', {users});
     } catch (error) {
       res.json(error);
     }
@@ -29,7 +26,7 @@ class UserController {
   async deleteUsers(req, res, next) {
     const users = await req.app.locals.services.users.getUsers();
     const { id } = await req.params;
-    // const { users } = res.locals;
+
     await req.app.locals.services.users.deleteUsers(users, id);
 
     const results = users.filter((user) => user.id !== id);

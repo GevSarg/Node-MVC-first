@@ -1,4 +1,7 @@
 class LoginController {
+  async renderLogin(req, res, next) {
+    res.render("login");
+  }
   async checkLogin(req, res, next) {
     const users = await req.app.locals.services.users.getUsers();
 

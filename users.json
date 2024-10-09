@@ -17,6 +17,12 @@
       "email": "email2@gmail.com",
       "password": "$2a$10$Tt6dUovJiZocWPyAvfnKkOPIDMiCcwMa3OnoGMJg8jXOfUZArRQze",
       "id": "06dd1b93-c410-4401-86d5-d9ed930fee95"
+    },
+    {
+      "name": "123456",
+      "email": "123@mail.com",
+      "password": "$2a$10$0x/ys1aIiqXHDFEZ85GX3.uvxIIi9bsE/9YVMDEDDcN5aGDskC5Ci",
+      "id": "f671edf4-70b1-4605-adea-13fa747a19bd"
     }
   ]
 }
