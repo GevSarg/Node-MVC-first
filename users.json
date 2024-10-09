@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Bogdan",
+      "email": "nar@gmail.com",
+      "password": "$2a$10$4jQXcCdow0od3/aseylTyOsrxDLOFYwzHCLQUYGSSPee/TuZkNxF.",
+      "id": "4f7b6488-20c3-48ed-bb2f-8ad61fd199af"
+    },
+    {
+      "name": "asd23",
+      "email": "some32@gmail.com",
+      "password": "$2a$10$0ShIr4VH9IrIiJzjYRSoSeLjME0y4ad.WQylDuIU4Pv5xT.o45BGm",
+      "id": "1ae4fbd5-93a7-4466-bcad-4b3fda4d702b"
+    },
+    {
+      "name": "asd24",
+      "email": "email2@gmail.com",
+      "password": "$2a$10$Tt6dUovJiZocWPyAvfnKkOPIDMiCcwMa3OnoGMJg8jXOfUZArRQze",
+      "id": "06dd1b93-c410-4401-86d5-d9ed930fee95"
+    }
+  ]
+}

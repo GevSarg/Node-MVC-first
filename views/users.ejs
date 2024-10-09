@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Users</h1>
+    <form action="/users" method="post">
+      <input type="text" placeholder="name" name="name" />
+      <input type="text" placeholder="email" name="email" />
+      <input type="text" placeholder="password" name="password" />
+      <input type="text" placeholder="confrimPassword" name="confrimPassword" />
+      <button>register</button>
+    </form>
+    <a href="/users/login">login</a>
+    <ul id="list">
+      <%users.forEach(({name, id})=> { %>
+      <li>
+        <%=name %>
+        <a href="/users/change/<%= id %>">change</a>
+        <button class="btn__delete" data-id="<%=id %>">del</button>
+      </li>
+
+      <% }) %>
+    </ul>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
